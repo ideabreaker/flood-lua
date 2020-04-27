@@ -8,7 +8,7 @@ function floodSA(source,command,speed)
 				destroyElement(floodWater)
 				setWaterLevel(0)
 				level = 0
-				outputDebugString ("Previous flooding has been stopped by the server.")
+				outputDebugString ("Powódź została wyłączona przez server.")
 			end
 			local speed = tonumber(speed)
 			floodWater = createWater(-2998,-2998,0,2998,-2998,0,-2998,2998,0,2998,2998,0)
@@ -41,7 +41,7 @@ function stopFlood(source,command)
 				outputDebugString("Flooding stopped by "..getPlayerName(source)..".")
 				outputChatBox("Poziom wody opadł. Sytuacja jest pod kontrolą, możecie wracać!",getRootElement(),255,0,0)
 			else
-				outputChatBox("There is no flood to stop.",source,255,0,0)
+				outputChatBox("Nie masz co zastopować.",source,255,0,0)
 			end
 	else
 		outputChatBox ("Nie posiadasz permisji do tej komendy!",source,255,0,0)
